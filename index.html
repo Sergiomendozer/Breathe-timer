@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Breathe Timer App</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div id="app">
+      <h1>Breathe Timer</h1>
+      <div class="timer-container">
+        <div class="timer-group">
+          <div class="timer-circle inhale">
+            <span class="timer-text">Inhale</span>
+            <span class="timer-duration">4.0s</span>
+            <div class="progress-ring"></div>
+          </div>
+          <div class="duration-control">
+            <button class="duration-btn minus" data-target="inhale">-</button>
+            <button class="duration-btn plus" data-target="inhale">+</button>
+          </div>
+        </div>
+        <div class="timer-group">
+          <div class="timer-circle hold">
+            <span class="timer-text">Hold</span>
+            <span class="timer-duration">4.0s</span>
+            <div class="progress-ring"></div>
+          </div>
+          <div class="duration-control">
+            <button class="duration-btn minus" data-target="hold">-</button>
+            <button class="duration-btn plus" data-target="hold">+</button>
+          </div>
+        </div>
+        <div class="timer-group">
+          <div class="timer-circle exhale">
+            <span class="timer-text">Exhale</span>
+            <span class="timer-duration">5.0s</span>
+            <div class="progress-ring"></div>
+          </div>
+          <div class="duration-control">
+            <button class="duration-btn minus" data-target="exhale">-</button>
+            <button class="duration-btn plus" data-target="exhale">+</button>
+          </div>
+        </div>
+      </div>
+      <div id="breatheCounter" class="breathe-counter">Breaths: 0</div>
+      <div class="button-container">
+        <button id="startButton" class="control-button start">Start</button>
+        <button id="stopButton" class="control-button stop">Stop</button>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
